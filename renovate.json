@@ -5,16 +5,15 @@
   "ignorePaths": [],
   "packageRules": [
     {
-      "paths": ["*.tf"],
-      "groupName": "terraform",
-      "schedule": ["before 3am on the first day of the month"]
+      "managers": ["regex"],
+      "groupName": "terraform"
     }
   ],
+	"fileMatch": ["\\.tf$"],
   "regexManagers": [
     {
-      "fileMatch": ["\\.tf$"],
       "matchStrings": [
-        "source\\s+=\\s+\"(?<depName>.+?)(//.+|\")\\s+version\\s+=\\s+\"(?<currentValue>.+?)\""
+        "source\\s+=\\s+\"(?<depName>.+?)\"\\s+version\\s+=\\s+\"(?<currentValue>.+?)\""
       ],
       "datasourceTemplate": "terraform-module",
       "versioningTemplate": "hashicorp"
