@@ -5,7 +5,7 @@
   "ignorePaths": [],
   "packageRules": [
     {
-      "managers": ["regex", "terraform"],
+      "managers": ["regex"],
       "groupName": "terraform",
       "schedule": ["before 3am on the first day of the month"]
     }
