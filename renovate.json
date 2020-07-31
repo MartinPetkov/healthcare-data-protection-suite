@@ -5,7 +5,7 @@
   "ignorePaths": [],
   "packageRules": [
     {
-      "managers": ["regex", "terraform"],
+      "managers": ["regex"],
       "groupName": "terraform",
       "fileMatch": [
         "\\.tf$"
