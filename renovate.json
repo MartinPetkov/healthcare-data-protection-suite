@@ -5,11 +5,13 @@
   "ignorePaths": [],
   "packageRules": [
     {
-      "paths": ["*.tf"],
-      "groupName": "terraform",
-      "fileMatch": [
-        "\\.tf$"
-      ],
+      "managers": ["regex"],
+      "groupName": "terraform"
+    }
+  ],
+	"fileMatch": ["\\.tf$"],
+  "regexManagers": [
+    {
       "matchStrings": [
         "source\\s+=\\s+\"(?<depName>.+?)\"\\s+version\\s+=\\s+\"(?<currentValue>.+?)\""
       ],
