@@ -17,7 +17,7 @@ require (
 	github.com/imdario/mergo v0.3.10
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/mitchellh/reflectwalk v1.0.1 // indirect
-	github.com/otiai10/copy v1.2.0
+	github.com/otiai10/copy v1.4.2
 	github.com/rodaine/hclencoder v0.0.0-20200711024249-063a90d8fab0
 	github.com/ryanuber/columnize v2.1.1+incompatible
 	github.com/spf13/afero v1.2.2 // indirect
